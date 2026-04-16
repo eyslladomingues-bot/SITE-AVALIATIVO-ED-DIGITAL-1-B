@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportPulse | Performance e Paixão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header role="banner">
+        <nav class="navbar" aria-label="Menu Principal">
+            <div class="logo">Sport<span>Pulse</span></div>
+            <div class="a11y-controls">
+                <button onclick="changeFontSize('increase')" aria-label="Aumentar fonte">A+</button>
+                <button onclick="changeFontSize('decrease')" aria-label="Diminuir fonte">A-</button>
+                <button onclick="toggleContrast()" aria-label="Alternar Alto Contraste">◐</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero reveal" aria-labelledby="hero-title">
+            <h1 id="hero-title">Onde o esporte ganha vida.</h1>
+            <p>Descubra modalidades, treinos e performance em um só lugar.</p>
+        </section>
+
+        <section class="carousel-container reveal" aria-label="Destaques em Carrossel">
+            <div class="carousel" id="carousel-track" role="region" aria-live="polite">
+                </div>
+            <div class="carousel-nav">
+                <button id="prevBtn" aria-label="Slide Anterior">❮</button>
+                <button id="nextBtn" aria-label="Próximo Slide">❯</button>
+            </div>
+        </section>
+
+        <section class="sports-grid reveal" id="sports-container" aria-labelledby="sports-title">
+            <h2 id="sports-title" class="section-title">Nossas Modalidades</h2>
+            <div class="grid-wrapper">
+                </div>
+        </section>
+
+        <section class="faq reveal" aria-labelledby="faq-title">
+            <h2 id="faq-title" class="section-title">Dúvidas Frequentes</h2>
+            <div id="faq-accordion">
+                </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 SportPulse. Desenvolvido com foco em acessibilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
